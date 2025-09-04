@@ -25,6 +25,10 @@
       /* Secondaire feu */
       --zc-gold: #FFC82C;
       /* Accent pâte */
+      --zc-bg-light: #F6F6F9;
+      /* Fond clair */
+      --zc-bg-dark: #121216;
+      /* Fond sombre */
       --zc-text-dark: #0E0E0F;
       --zc-text-light: #FFFFFF;
       --zc-gray-100: #F0F2F6;
@@ -46,7 +50,7 @@
     }
 
     html[data-theme="light"] {
-      --bg: #F6F6F9;
+      --bg: var(--zc-bg-light);
       --panel: #fff;
       --text: var(--zc-text-dark);
       --muted: #586176;
@@ -56,7 +60,7 @@
     }
 
     html[data-theme="dark"] {
-      --bg: #121216;
+      --bg: var(--zc-bg-dark);
       --panel: #0F1013;
       --text: #ECEFF4;
       --muted: #B9BFCA;
